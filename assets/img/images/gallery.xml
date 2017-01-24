@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>  
+
+<tn3>
+	<gallery>  
+		<title>Gallery title</title>  
+		<description>Gallery description</description>  
+		<file_root>images/</file_root>  
+		<thumb_src>thumbs/1.jpg</thumb_src>  
+		<images>  
+			<image>  
+			<title>Image 1</title>  
+			<description>The 1st image</description>  
+			<image_src>fixed/1.jpg</image_src>  
+			<thumb_src>thumbs/1.jpg</thumb_src>  
+			</image> 
+		</images>  
+	</gallery>  
+</tn3> 

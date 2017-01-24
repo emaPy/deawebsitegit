@@ -1,2 +1,38 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+html body {
+  margin: 0;
+  padding: 0; }
+
 .main-header {
-  background-color: pink; }
+  background-color: black;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  min-width: 100%;
+  margin: 0;
+  opacity: 0.6;
+  margin: 0;
+  padding: 0;
+  height: 80px;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.nav-item {
+  display: inline;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: 'Roboto', sans-serif; }
+
+.nav-item:last-child {
+  margin-right: 20px; }
+
+.nav-item a {
+  color: white;
+  text-decoration: none; }
+
+.navbar {
+  list-style-type: none; }
+
+.home {
+  height: 2000px; }
