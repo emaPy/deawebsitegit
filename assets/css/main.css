@@ -7,16 +7,18 @@ html body {
   background-color: black;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   min-width: 100%;
   margin: 0;
-  opacity: 0.6;
+  opacity: 1;
   margin: 0;
   padding: 0;
   height: 80px;
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.75);
+  height: 100px; }
 
 .nav-item {
   display: inline;
@@ -34,5 +36,29 @@ html body {
 .navbar {
   list-style-type: none; }
 
+.logo {
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+  min-height: 100px;
+  max-width: 150px;
+  background-image: url(/assets/img/images/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0; }
+
+@media (max-width: 768px) {
+  .navbar {
+    display: none; }
+  .collapsed-navbar-button {
+    display: block; } }
+
 .home {
   height: 2000px; }
+
+.img-container {
+  height: 500px;
+  background-image: url(/assets/img/images/background_home.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover; }
