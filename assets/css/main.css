@@ -126,4 +126,6 @@ html body {
     display: block; }
   .col-1 {
     padding-top: 20px;
-    max-width: 100%; } }
+    max-width: 100%; }
+  .flex-2 {
+    display: block; } }
