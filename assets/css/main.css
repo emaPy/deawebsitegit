@@ -18,7 +18,9 @@ html body {
   -ms-flex-align: center;
       align-items: center;
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.75);
-  height: 100px; }
+  height: 100px;
+  position: fixed;
+  top: 0; }
 
 .nav-item {
   display: inline;
@@ -65,7 +67,8 @@ html body {
   height: 500px; }
 
 .img-container {
-  height: 500px;
+  height: 100vh;
+  margin-top: 80px;
   background-image: url(/assets/img/images/background_home.png);
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -122,7 +125,7 @@ html body {
   margin: 0; }
 
 @media (max-width: 660px) {
-  .flex {
+  .flex, .flex-spaced {
     display: block; }
   .col-1 {
     padding-top: 20px;
