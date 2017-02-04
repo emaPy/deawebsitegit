@@ -4,7 +4,7 @@ html body {
   padding: 0; }
 
 .main-header {
-  background-color: black;
+  background-color: red;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
