@@ -130,13 +130,15 @@ html body {
   border: 2px solid #d3d3d3;
   font-size: 1em;
   font-weight: bold;
-  padding: 20px 30px 20px 30px;
-  opacity: 0.7; }
+  padding: 20px 30px 20px 30px; }
 
 .discover-btn:hover {
   background-color: #d3d3d3;
   color: black;
   border-color: black; }
+
+.discover-btn:focus {
+  outline: 0; }
 
 .line1 {
   background-color: black;
