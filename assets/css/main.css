@@ -31,7 +31,8 @@ html body {
 
 .main-font {
   font-family: 'Quicksand', sans-serif;
-  color: white; }
+  color: white;
+  font-weight: lighter; }
 
 .main-font-inv {
   font-family: 'Quicksand', sans-serif;
@@ -144,7 +145,6 @@ html body {
   background-color: black;
   width: 100%;
   height: 500px;
-  float: left;
   margin: 0; }
 
 .line2 {
@@ -154,6 +154,45 @@ html body {
   height: 500px;
   float: left;
   margin: 0; }
+
+.press-stamp {
+  background-color: black;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  border-top: 1px solid #d3d3d3;
+  min-height: 500px; }
+  .press-stamp h1 {
+    text-align: center;
+    font-size: 2.7em;
+    margin: 0; }
+  .press-stamp h2 {
+    font-size: 1.4em;
+    text-align: center;
+    margin-top: 5px; }
+  .press-stamp h3 {
+    text-align: center;
+    font-size: 1em;
+    margin-top: 5px; }
+    .press-stamp h3 a {
+      text-decoration: underline;
+      color: white; }
+
+.stamp-list-container {
+  margin-top: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.publication-item {
+  height: 400px;
+  min-width: 350px;
+  margin: 0;
+  padding-top: 30px; }
+
+.publication {
+  display: block;
+  margin: auto;
+  height: 400px;
+  max-width: 300px; }
 
 @media (max-width: 660px) {
   .col-1 {
