@@ -1,13 +1,27 @@
-$(window).scroll(
-    {
-        previousTop: 0
-    },
-    function () {
-    var currentTop = $(window).scrollTop();
-    if (currentTop < this.previousTop) {
-        $(".main-header").show();
-    } else {
-        $(".main-header").hide();
-    }
-    this.previousTop = currentTop;
+
+var initpos;
+var header;
+var finalpos;
+
+$(document).ready(function(){
+  header=$('.main-header');
+  initpos=header.offset().top;
+  console.log("pos "+initpos);
+});
+
+$(window).scroll(function(){
+  currentTop=header.offset().top;
+  isLoading = true;
+  if (currentTop > initpos) {
+    header.hide();
+    finalpos=currentTop
+  }else if (finalpos > currentTop) {
+    header.show();
+  }
+
+
+
+
+
+
 });

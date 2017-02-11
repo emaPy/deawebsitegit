@@ -158,24 +158,26 @@ html body {
 .line {
   width: 100%;
   height: 600px;
-  margin: 0;
-  background-color: black; }
+  margin: 0; }
 
-/*  background:
-    image: url(/assets/img/WDF_1591365.jpg)
-    repeat: no-repeat
-    position: center bottom
-    size: cover*/
-/* background:
-    image: url(/assets/img/1920x1080-WDF_1591361.jpg)
-    repeat: no-repeat
-    position: center bottom
-    size: cover*/
-/*  background:
-    image: url(/assets/img/47842576-nature-images-hd.jpg)
-    repeat: no-repeat
-    position: center bottom
-    size: cover*/
+.line1 {
+  background-image: url(/assets/img/WDF_1591365.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover; }
+
+.line2 {
+  background-image: url(/assets/img/1920x1080-WDF_1591361.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover; }
+
+.line3 {
+  background-image: url(/assets/img/47842576-nature-images-hd.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover; }
+
 .publications-main {
   background-color: black;
   padding-top: 20px;
