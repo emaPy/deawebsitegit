@@ -1,39 +1,46 @@
 
-var didScroll;
+var isScrolling;
 var initpos;
 var currentPos;
 var header;
 
 $(document).ready(function(){
   header=$('.main-header')
-  initpos=header.offset();
-  didScroll=false
+  isScrolling=false
 
 });
 
 
-
-$(window).scroll(function(event){
-  if (!didScroll) {
+$(window)
+  .on("scrollstart", function() {
     initpos=header.offset().top;
-    console.log(';dddd');
-  }
-  didScroll=true;
-});
+  })
+  .on("scrollstop", function() {
+    header.show();
+    initpos=header.offset().top;
+  })
+  $(window).scroll(function(){
+    isScrolling=true;
+    currentPos=header.offset().top;
+
+  });
 
 setInterval(function(){
-  if(didScroll){
-    hasScrolled(header.offset().top);
-  }else {
-    header.show();
+  if(isScrolling){
+    console.log("scrolling");
+    adjustHeader();
+
+  }
+  isScrolling=false;
+
+},300);
+
+
+function adjustHeader(){
+  if (initpos<currentPos) {
+    header.hide();
   }
 
-},250);
 
-function hasScrolled(currentPos){
-  if (currentPos >= initpos) {
-      header.hide();
-  }
-  didScroll=false;
 
 }
